@@ -21,7 +21,11 @@
         <tr *ngFor="let item of data">
           <td class="forecast-info-main">
             <a [routerLink]="['/forecast', item.id]">{{item.apiData.display_location.full}}</a></td>
-          <td class="forecast-info">{{item.apiData.weather}}</td>
+          <td class="forecast-info">{{item.apiData.weather}}
+            <br>
+              <img [src]='item.apiData.icon_url' class="forecast-icon" alt="forecast">
+          </td>
+      
           <td class="forecast-info-sec">{{item.apiData.temperature_string}}</td>
         </tr>
       </tbody>
