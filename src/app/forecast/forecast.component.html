@@ -1,0 +1,44 @@
+<!-- Template for the city component -->
+<div style="text-align:center">
+        <h2>
+          City forecast in the next hours
+        </h2>
+        <p>Extended forecast for day/night in the next 10 days</p>
+      </div>
+      <div id="map" style="font-size: 10px;">
+        
+      </div>
+      <div id="cityCont" class="container">
+          <button (click)="goBack()" class="btn btn-raised btn-primary">Go Back</button>
+          <h2 *ngIf="data[0]">
+            <img [src]='data[0].icon_url' class="forecast-icon" alt="forecast">
+            {{data[0].fcttext}}
+          </h2>    
+          <div>
+            <table id="table" class="table">
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Temperature min/max (F)</th>
+                  
+                  <th>Report</th>
+                  <th>Forecast</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let fc of data">
+                  <td class="forecast-info forecast-0">{{fc.title}}</td>
+                
+                  <td class="forecast-info forecast-2">{{fc.fcttext}}</td>
+                  <td class="forecast-info forecast-3">{{fc.icon}}</td>
+                  <td class="forecast-info forecast-4"><img [src]='fc.icon_url' class="forecast-icon" alt="forecast"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+
+
+
+
+

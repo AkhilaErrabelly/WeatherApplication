@@ -1,0 +1,31 @@
+<!-- Template for the cities component -->
+<div style="text-align:center">
+  <h1>
+    Welcome to app!
+  </h1>
+  <img width="300" src="assets/img/vector-flat-city.jpg">
+</div>
+<div class="container">
+  <h2>Demo Cities</h2>
+  <p>Click on city to see forecast</p>            
+  <div>
+    <table id="tableCity" class="table">
+      <thead>
+        <tr>
+          <th>City </th>
+          <th>Condition</th>
+          <th>Average Temperature (F)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of data">
+          <td class="forecast-info-main">
+            <a [routerLink]="['/forecast', item.id]">{{item.apiData.display_location.full}}</a></td>
+          <td class="forecast-info">{{item.apiData.weather}}</td>
+          <td class="forecast-info-sec">{{item.apiData.temperature_string}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
