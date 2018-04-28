@@ -2,7 +2,6 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
-<img width="500" src="screenshots/Fourcitiesview1.PNG">
 
 
 ## Development server
@@ -36,9 +35,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 "Weather App" is a simple weather forecast app, created in Angular 4. It displayes a list of predefined cities with main forecast information. By clicking on
-the city name, a page with extended forecast data is displayed. Also, there is a search input, to search extended forecast data for any city in the world.
+the city name, a page with extended forecast data is displayed. 
 
-The forecast data is provided from openweathermap apis. 
+The forecast data is provided from Wunderground apis. 
 
 The app is responsive.
 
@@ -74,7 +73,7 @@ npm -v
 
     This will install the node modules.
 
-2. Navigate to your weatherapp folder in CMD
+2. Navigate to your WeatherApplication folder in CMD
 
 3. Start application by typing 
        npm start
