@@ -1,5 +1,6 @@
 import { AppPage } from './app.po';
-
+import { conditionPage } from "./pages/condition.page";
+//Title of the page
 describe('weather-application App', () => {
   let page: AppPage;
 
@@ -12,3 +13,5 @@ describe('weather-application App', () => {
     expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
+
+// please run ng e2e for results.

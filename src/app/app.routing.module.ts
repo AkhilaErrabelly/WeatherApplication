@@ -3,7 +3,7 @@ import { RouterModule, Routes, ActivatedRoute } from '@angular/router';
 import { ConditionComponent } from './condition/condition.component';
 import { ForecastComponent } from './forecast/forecast.component';
 import { ModuleWithProviders } from '@angular/compiler/src/core';
-
+//routes are used to navigate between pages.
 export const routes: Routes =[
   {
     path:'',

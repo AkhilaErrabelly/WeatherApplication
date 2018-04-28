@@ -1,3 +1,5 @@
+//This typescript page is used for default 
+
 import { Component, OnInit } from '@angular/core';
 import { RouterModule, Routes, ActivatedRoute, ParamMap } from '@angular/router';
 import { Http } from '@angular/http';
