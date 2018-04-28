@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
+<img width="500" src="screenshots/Fourcitiesview1.PNG">
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -77,5 +80,10 @@ npm -v
        npm start
 
 4. Open http://localhost:4200/ in your browser.
+
+
+#There are two views Condition (main view) and forecast ( second view)
+
+#Each view has it's own html, css , ts and spec.ts(angular/testing)
 
 There are also screenshots of the application. 
